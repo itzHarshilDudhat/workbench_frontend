@@ -9,14 +9,14 @@ export const CommonSlice = createSlice({
     name: "common",
     initialState,
     reducers: {
-        setIsMobile: (state, value) => {
-            state.isMobile = value
+        setIsMobile: (state, action) => {
+            state.isMobile = action.payload
         },
-        setIsLoading: (state, value) => {
-            state.loading = value
+        setIsLoading: (state, action) => {
+            state.loading = action.payload
         },
-        setUser: (state, value) => {
-            state.user = value
+        setUser: (state, action) => {
+            state.user = action.payload
         }
     }
 })

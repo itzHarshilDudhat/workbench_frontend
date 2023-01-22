@@ -6,7 +6,8 @@ const Api = {
         Login: `${Host}/login`,
         ForgotPassword: `${Host}/forgotPassword`,
         ForgotChange:`${Host}/changeForgotPass`,
-        ChangePassword:`${Host}/changePassword`
+        ChangePassword:`${Host}/changePassword`,
+        VerifyAccount:`${Host}/verifyAccount`
     },
 };
 

@@ -49,7 +49,7 @@ export const onLogin = (data, navigate) => {
                     dispatch(setUser(res.data[0].user))
                     toast(response.data.message)
                     dispatch(setLoading(false))
-                    // navigate("/")
+                    navigate("/")
                 }).catch((err) => {
                     catchResponse(err)
                     dispatch(setLoading(false))
@@ -137,6 +137,28 @@ export const onChangePassword = (data, navigate) => {
             urlencoded.append("oldPassword", data.oldPassword)
             urlencoded.append("userName", data.userName)
             DataService.put(Api.User.ChangePassword, urlencoded)
+                .then((response) => {
+                    toast(response.data.message)
+                    dispatch(setLoading(false))
+                    navigate("/auth/login")
+                }).catch((err) => {
+                    catchResponse(err)
+                    dispatch(setLoading(false))
+                });
+        } catch (error) {
+            catchResponse(error)
+            dispatch(setLoading(false))
+        }
+    }
+}
+export const onVerifyEmail = (verificationString, navigate) => {
+    return async (dispatch) => {
+        try {
+            console.log(verificationString)
+            dispatch(setLoading(true))
+            let urlencoded = new URLSearchParams()
+            urlencoded.append("verificationString", verificationString)
+            DataService.put(Api.User.VerifyAccount, urlencoded)
                 .then((response) => {
                     toast(response.data.message)
                     dispatch(setLoading(false))
