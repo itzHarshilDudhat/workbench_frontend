@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Logo from "../assets/images/Logo.png";
@@ -8,10 +8,12 @@ import LoadingScreen from "./LoadingScreen";
 
 const AuthScreen = () => {
     const loading = useSelector((state) => state.auth.loading);
-    let pathName = window.location.pathname;
+    const location = useLocation();
+    let pathName = location.pathname;
+
     useEffect(() => {
-        pathName = window.location.pathname;
-    }, [window.location])
+        pathName = location.pathname;
+    }, [location])
 
     return (
         <>

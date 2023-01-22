@@ -64,15 +64,24 @@ const Login = () => {
                         />
                     </Form.Item>
                     <div className='submit-btn-div-login'>
-                        <h5
-                            className="forgot-link"
-                            onClick={() => {
-                                navigate("/auth/forgotPassword");
-                            }}
-                        >
-                            Forgot Password{" "}
-                        </h5>
-
+                        <div className='links-div'>
+                            <h5
+                                className="forgot-link"
+                                onClick={() => {
+                                    navigate("/auth/signup");
+                                }}
+                            >
+                                Create account{" "}
+                            </h5>
+                            <h5
+                                className="forgot-link"
+                                onClick={() => {
+                                    navigate("/auth/forgotPassword");
+                                }}
+                            >
+                                Forgot Password?{" "}
+                            </h5>
+                        </div>
                         <Form.Item className="submit-btn-login">
                             <Button
                                 className="btn-submit"

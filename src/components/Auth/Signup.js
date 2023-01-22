@@ -145,10 +145,10 @@ const Signup = () => {
                         <h5
                             className="forgot-link"
                             onClick={() => {
-                                navigate("/auth/forgotPassword");
+                                navigate("/auth/login");
                             }}
                         >
-                            Forgot Password{" "}
+                            Already account?{" "}
                         </h5>
 
                         <Form.Item className="submit-btn-login">
