@@ -7,6 +7,7 @@ import Login from '../components/Auth/Login'
 import ProtectedRoute from '../components/Auth/ProtectedRoute'
 import Signup from '../components/Auth/Signup'
 import VerifyEmail from '../components/Auth/VerifyEmail'
+import Client from '../components/Client/Client'
 import Dashboard from '../components/Dashboard/Dashboard'
 import AuthScreen from '../screens/AuthScreen'
 import DashboardScreen from '../screens/DashboardScreen'
@@ -26,6 +27,7 @@ const Routes = () => {
                 <Route path='' element={<ProtectedRoute />}>
                     <Route path='' element={<DashboardScreen />}>
                         <Route path='' element={<Dashboard />} />
+                        <Route path='client' element={<Client />} />
                     </Route>
                 </Route>
             </Routess>

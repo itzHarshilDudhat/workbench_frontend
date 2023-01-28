@@ -5,9 +5,19 @@ const Api = {
         SignUp: `${Host}/signup`,
         Login: `${Host}/login`,
         ForgotPassword: `${Host}/forgotPassword`,
-        ForgotChange:`${Host}/changeForgotPass`,
-        ChangePassword:`${Host}/changePassword`,
-        VerifyAccount:`${Host}/verifyAccount`
+        ForgotChange: `${Host}/changeForgotPass`,
+        ChangePassword: `${Host}/changePassword`,
+        VerifyAccount: `${Host}/verifyAccount`,
+        AddClient: `${Host}/addClient`,
+        UpdateClient: `${Host}/updateClient`,
+        AllClient: `${Host}/allClient`,
+        ClientById: `${Host}/clientById`,
+        DeleteClient: `${Host}/deleteClient`,
+        AddGoods: `${Host}/addGoods`,
+        AllGoods: `${Host}/allGoods`,
+        AllGoodsByClient: `${Host}/allGoodsByClient`,
+        DeleteGood: `${Host}/deleteGood`,
+        UpdateGood: `${Host}/updateGood`,
     },
 };
 

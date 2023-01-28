@@ -34,9 +34,9 @@ const Menu = () => {
         {
             key: "2",
             icon: <UserSwitchOutlined />,
-            label: "User management",
+            label: "Client management",
             onClick: () => {
-                navigate("/user-management");
+                navigate("/client");
             },
         },
         {
