@@ -1,6 +1,7 @@
 import React from "react";
 import {
     LoginOutlined,
+    PieChartFilled,
     UserOutlined,
     UserSwitchOutlined,
 } from "@ant-design/icons";
@@ -37,6 +38,14 @@ const Menu = () => {
             label: "Client management",
             onClick: () => {
                 navigate("/client");
+            },
+        },
+        {
+            key: "3",
+            icon: <PieChartFilled />,
+            label: "Goods management",
+            onClick: () => {
+                navigate("/goods");
             },
         },
         {

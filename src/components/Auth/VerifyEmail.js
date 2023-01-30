@@ -14,7 +14,7 @@ const VerifyEmail = () => {
 
     return (
         <>
-            <div style={{ height: "100%" }}>
+            <div style={{ height: "100vh" }}>
                 <LoadingScreen />
             </div>
         </>

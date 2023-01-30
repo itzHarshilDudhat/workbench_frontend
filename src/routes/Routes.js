@@ -9,6 +9,7 @@ import Signup from '../components/Auth/Signup'
 import VerifyEmail from '../components/Auth/VerifyEmail'
 import Client from '../components/Client/Client'
 import Dashboard from '../components/Dashboard/Dashboard'
+import Goods from '../components/Goods/Goods'
 import AuthScreen from '../screens/AuthScreen'
 import DashboardScreen from '../screens/DashboardScreen'
 
@@ -28,6 +29,7 @@ const Routes = () => {
                     <Route path='' element={<DashboardScreen />}>
                         <Route path='' element={<Dashboard />} />
                         <Route path='client' element={<Client />} />
+                        <Route path='goods' element={<Goods />} />
                     </Route>
                 </Route>
             </Routess>
