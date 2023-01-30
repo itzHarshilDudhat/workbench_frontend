@@ -44,7 +44,7 @@ const AuthScreen = () => {
                         style={{
                             height:
                                 pathName === "/auth/signup"
-                                    ? "600px"
+                                    ? "650px"
                                     : pathName === "/auth/login"
                                         ? "325px"
                                         : pathName === "/auth/forgotPassword"

@@ -1,12 +1,15 @@
-import { Card } from 'antd'
-import React from 'react'
+import { Card } from "antd";
+import React from "react";
+import LoadingScreen from "../../screens/LoadingScreen";
 
 const Dashboard = () => {
-    return (
-        <Card>
-            <h1>Harshil dashboard</h1>
-        </Card>
-    )
-}
+  return (
+    <Card>
+      <div style={{ height: "80vh" }}>
+        <LoadingScreen />
+      </div>
+    </Card>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

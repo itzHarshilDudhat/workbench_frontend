@@ -94,6 +94,7 @@ const ClientTable = () => {
       dataSource={allClient}
       columns={columns}
       className="list-table"
+      scroll={{ x: 400 }}
     ></Table>
   )
 }
